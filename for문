@@ -1,0 +1,87 @@
+#2739
+a=int(input())
+
+for i in range(1,10):
+    print(a,"*",i,"=",a*i)
+    
+#10950
+t=int(input())
+
+for i in range(1,t+1):
+    a,b=input().split(" ")
+    a=int(a)
+    b=int(b)
+    print(a+b)
+
+#8393
+a=int(input())
+sum=0
+
+for i in range(1,a+1):
+    sum+=i
+
+print(sum)
+
+#15552(*)
+import sys
+
+t=int(input())
+for i in range(1,t+1):
+    a,b=sys.stdin.readline().split()
+    a=int(a)
+    b=int(b)
+    print(a+b)
+
+#2741
+
+a= int(input())
+
+for i in range(1,a+1):
+    print(i)
+    
+#2742
+a=int(input())
+
+for i in range (a,0,-1):
+    print(i)
+
+#11021
+n=int(input())
+
+for i in range(n):
+    a,b=input().split(" ")
+    a=int(a)
+    b=int(b)
+    print(f'Case #{i+1}: {a+b}')
+  
+#11022
+
+n=int(input())
+
+for i in range(n):
+    a,b=input().split(" ")
+    a=int(a)
+    b=int(b)
+    print(f'Case #{i+1}: {a} + {b} = {a+b}')
+ 
+#2438
+a=int(input())
+
+for i in range(1,a+1):
+    print("*"*i)
+
+#2439
+a=int(input())
+
+for i in range(1,a+1):
+    print(" "*(a-i),end="")
+    print("*"*i)
+
+#10871
+x,n=map(int,input().split())
+a=[]
+a=list(map(int,input().split()))
+for i in range (x):
+    if a[i]<n:
+        print(a[i],end=" ")
+
