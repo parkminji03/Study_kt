@@ -1,0 +1,43 @@
+#10952
+while True:
+    a,b=input().split()
+    a=int(a)
+    b=int(b)
+    if a+b != 0:
+        print(a+b)
+    if a+b == 0:
+        break
+
+#10951
+while True:
+    try:
+        a,b=input().split()
+        a=int(a)
+        b=int(b)
+        print(a+b)
+    except:
+        break
+        
+#1110(
+n = int(input())
+
+store = n
+
+count = 0
+
+while True:
+    if n > 0:
+        left = n // 10
+    else:
+        left = 0
+    
+    right = n % 10
+    result = left + right
+    new_right = result % 10
+    n = (right * 10) + new_right
+    
+    count += 1
+    
+    if n == store :
+        print(count)
+        break
